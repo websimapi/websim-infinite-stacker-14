@@ -226,8 +226,8 @@ export class Game {
         }
 
         const stackTopY = BLOCK_HEIGHT * this.stack.length;
-        const targetCameraY = stackTopY + 4;
-        const targetLookAtY = stackTopY - 1;
+        const targetCameraY = stackTopY + 5; // Raised camera slightly
+        const targetLookAtY = stackTopY; // Look at the top of the stack
 
         this.camera.position.y += (targetCameraY - this.camera.position.y) * 0.05;
 
